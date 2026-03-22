@@ -1,3 +1,4 @@
+// Created array for the quotes to be generated randomly when the button is clicked.
 const quotes = [
   "The best way to get started is to quit talking and begin doing.",
   "Don’t let yesterday take up too much of today.",
@@ -23,6 +24,7 @@ const quotes = [
 
 
 const button = document.querySelector("button");
+
 const quote = document.querySelector("h1");
 button.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
