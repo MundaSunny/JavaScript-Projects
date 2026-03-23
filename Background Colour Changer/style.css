@@ -17,19 +17,14 @@ button{
     border: none;
     border-radius: 5px;
 }
+
 button:hover{
     background-color: #eb2f9c;
 }
+
 button:active{
     background-color: #f0df4b;
 }
-#color-picker{
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-
 
 #red{
     background-color: #e2150a;
