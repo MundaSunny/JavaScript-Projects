@@ -27,6 +27,8 @@ h1 {
   color: #333;
   margin-bottom: 30px;
   font-size: 28px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .form-group {

@@ -1,5 +1,8 @@
 // Income Tax Calculator
-document.getElementById('calculateBtn').addEventListener('click', function() {
+const form = document.getElementById('taxForm');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); 
   const income = parseFloat(document.getElementById('income').value);
   
   if (isNaN(income) || income < 0) {
@@ -20,7 +23,7 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
     tax = 14500 + (income - 85000) * 0.24;
   }
   
-  document.getElementById('Tax result').textContent = `Tax: $${tax.toFixed(2)}`;
-  
+  document.getElementById('Tax result').textContent = `: ₹ ${tax.toFixed(2)}`;
+
 
 });
