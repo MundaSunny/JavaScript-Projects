@@ -20,5 +20,7 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
     tax = 14500 + (income - 85000) * 0.24;
   }
   
-  document.getElementById('result').textContent = `Tax: $${tax.toFixed(2)}`;
+  document.getElementById('Tax result').textContent = `Tax: $${tax.toFixed(2)}`;
+  
+
 });
