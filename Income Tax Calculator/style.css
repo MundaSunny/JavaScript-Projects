@@ -9,7 +9,8 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  
+  justify-items: top;
+  align-items: center;
   font-family: 'Arial', sans-serif;
 }
 
@@ -27,8 +28,10 @@ h1.heading {
   color: #333;
   margin-bottom: 30px;
   font-size: 28px;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: top ;
+  justify-items: top
+  ;
+  align-items: top;
 }
 
 .form-group {

@@ -4,6 +4,11 @@ const form = document.getElementById('taxForm');
 form.addEventListener('submit', function(event) {
   event.preventDefault(); 
   const income = parseFloat(document.getElementById('income').value);
+
+  const taxRate = parseFloat(document.getElementById('taxRate').value) / 100;
+
+  const result = income * taxRate;
+
   
   if (isNaN(income) || income < 0) {
     alert('Please enter a valid income amount');
@@ -23,6 +28,7 @@ form.addEventListener('submit', function(event) {
     tax = 14500 + (income - 85000) * 0.24;
   }
   
+
   document.getElementById('Tax result').textContent = `: ₹ ${tax.toFixed(2)}`;
 
 
